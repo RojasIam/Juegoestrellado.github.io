@@ -8,6 +8,7 @@ body{
     
     
     background: url(/imagenes/XzZg.gif);
+    background-image: url(/imagenes/espacioooo.PNG);
     height: 100vh;
     max-height: 100vh;
     color: black;
@@ -70,14 +71,15 @@ transform:translatey(0)
 }
 .contenedorTodo #principal{
     grid-column: span 1;
-    background-image: url(/imagenes/XzZg.gif);
+    
+    /*background-image: url(/imagenes/XzZg.gif);*/
     opacity: 90%;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     padding: 20px;
 }
 .contenedorTodo #contenidoTodo{
-    background-image: url(/imagenes/XzZg.gif);
+    /*background-image: url(/imagenes/XzZg.gif);*/
     grid-column: 2/2;
     text-align: center;
     grid-row: 2/2;
