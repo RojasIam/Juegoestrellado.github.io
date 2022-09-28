@@ -1,0 +1,248 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+
+body{
+    
+    background-color: rgb(97, 93, 89);
+    background-image: url(/imagenes/XzZg.gif);
+    height: 100vh;
+    max-height: 100vh;
+    color: black;
+    font-family: 'Rubik Dirt', cursive;
+
+}
+.contenedorTodo{
+
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap:0px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,auto);
+    justify-content: center;
+   
+}
+.contenedorTodo .cabeza{
+
+grid-column-start:1 ;
+grid-column-end:-1 ;
+display: block;
+text-align: center;
+
+
+}
+@keyframes saltar{
+    from{
+        transform:translatey(0%);
+    }
+    to{
+        transform:translatey(5%);
+    }
+
+
+}
+.cabeza h1{
+
+text-shadow: 5px 5px 20px  rgb(255, 255, 255);
+color: aqua;
+animation: saltar 1s infinite;
+transform:translatey(0)
+}
+.cabeza h1:hover{
+    color: aquamarine;
+    transition: 1s;
+}
+.cabeza h3{
+
+text-shadow: 5px 5px 20px  rgb(255, 255, 255);  
+margin-bottom: 25px; 
+color: aqua; 
+animation: saltar 1s infinite;
+transform:translatey(0)
+}
+.cabeza h3:hover{
+    color: aquamarine; 
+    transition: 1s;
+}
+.contenedorTodo #principal{
+
+    grid-column: span 1;
+    background: rgb(8, 8, 8);
+    background-image: url(/imagenes/XzZg.gif);
+    opacity: 90%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px;
+}
+.contenedorTodo #contenidoTodo{
+
+    grid-column: 2/2;
+    text-align: center;
+    grid-row: 2/2;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    background: rgb(41, 41, 41);
+    background-image: url(/imagenes/XzZg.gif);
+    opacity: 90%;
+    align-items: center;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 20px;
+}
+#principal img{
+width: 100%;
+height: 100%;
+
+}
+#contenidoTodo{
+
+    margin-top: 0px;
+   
+
+}
+.contenedorTodo .piePagina{
+
+grid-column: span 2 ;
+text-align: center;
+}
+
+#palabra_a_adivinar span{
+    margin-top: 80px;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    border-bottom: 5px solid rgb(255, 255, 255);
+    width: 30px;
+    text-align: center;
+    margin-right: 15px;
+    display: inline-block;
+
+}
+
+header{
+align-items: center;
+align-content: center;
+}
+
+@keyframes efectologo{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#logoAndres{
+
+width: 20%;
+animation-name: efectologo;
+animation-duration: 15s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+#imagen{
+
+width: 70%;
+
+}
+
+
+#Jugar{
+
+margin-top: 15px;
+padding: 5px;
+font-size: 15px;
+border-radius: 8px;
+cursor: pointer;
+
+}
+
+#Jugar:hover{
+
+background: rgb(18, 19, 19);
+color: white;
+}
+#resultado{
+
+    color: aqua;
+margin-top: 16px;
+
+}
+#resultado:hover{
+
+color: aqua;
+color: aquamarine; 
+transform: scale(1.1);
+transition: 1s;   
+
+}
+#letrasabc {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 7px;
+    
+}
+
+#letrasabc button{
+    width: 38px;
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    font-size:15px;
+    cursor: pointer;
+
+}
+
+.piePagina{
+
+margin-top: 20px;
+
+}
+.piePagina p{
+
+    color: white;
+    
+    }
+    
+
+.social-media{
+height: 25px;
+margin: 10px;
+color: black;
+}
+/*responsive*/
+
+@media screen and (max-width:768px){
+
+    .contenedorTodo #contenidoTodo{
+      
+        grid-column:1/-1 ;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0px;
+        
+    }
+    .contenedorTodo #principal{
+       
+        grid-column:1/-1 ;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0px;
+        
+
+
+    }
+}
