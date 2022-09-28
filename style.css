@@ -6,7 +6,7 @@ padding: 0;
 
 body{
     
-    background-color: rgb(97, 93, 89);
+    
     background-image: url(/imagenes/XzZg.gif);
     height: 100vh;
     max-height: 100vh;
@@ -71,7 +71,7 @@ transform:translatey(0)
 .contenedorTodo #principal{
 
     grid-column: span 1;
-    background: rgb(8, 8, 8);
+    
     background-image: url(/imagenes/XzZg.gif);
     opacity: 90%;
     border-bottom-left-radius: 10px;
@@ -86,7 +86,7 @@ transform:translatey(0)
     display: inline-block;
     justify-content: center;
     text-align: center;
-    background: rgb(41, 41, 41);
+    
     background-image: url(/imagenes/XzZg.gif);
     opacity: 90%;
     align-items: center;
