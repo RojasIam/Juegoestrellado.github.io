@@ -7,8 +7,9 @@ padding: 0;
 body{
     
     
-    background: url(/imagenes/XzZg.gif);
-    background-image: url(/imagenes/espacioooo.PNG);
+    /*background: url(/imagenes/XzZg.gif);
+    background-image: url(/imagenes/espacioooo.PNG);*/
+    background-image: url(imagenes/XzZg.gif);
     height: 100vh;
     max-height: 100vh;
     color: black;
