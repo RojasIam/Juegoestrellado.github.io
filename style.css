@@ -7,7 +7,7 @@ padding: 0;
 body{
     
     
-    background-image: url(/imagenes/XzZg.gif);
+    background: url(/imagenes/XzZg.gif);
     height: 100vh;
     max-height: 100vh;
     color: black;
@@ -69,9 +69,7 @@ transform:translatey(0)
     transition: 1s;
 }
 .contenedorTodo #principal{
-
     grid-column: span 1;
-    
     background-image: url(/imagenes/XzZg.gif);
     opacity: 90%;
     border-bottom-left-radius: 10px;
@@ -79,15 +77,13 @@ transform:translatey(0)
     padding: 20px;
 }
 .contenedorTodo #contenidoTodo{
-
+    background-image: url(/imagenes/XzZg.gif);
     grid-column: 2/2;
     text-align: center;
     grid-row: 2/2;
     display: inline-block;
     justify-content: center;
     text-align: center;
-    
-    background-image: url(/imagenes/XzZg.gif);
     opacity: 90%;
     align-items: center;
     border-bottom-right-radius: 10px;
